@@ -50,6 +50,9 @@ function getEndpoints(deviceAddress, endpoints)
   var oee = endpoints.addEndpoint("12", "OEE ", endpointType.genericSensor);
         oee.variableTypeId = 1182;
 
+  var status = endpoints.addEndpoint("13", "Status", endpointType.genericSensor);
+        status.variableTypeId = 1378;
+
 }
 
 
