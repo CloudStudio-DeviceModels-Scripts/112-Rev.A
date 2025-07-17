@@ -14,41 +14,32 @@ function getConfiguration(config)
 
 function getEndpoints(deviceAddress, endpoints)
 {
-  var total_hours = endpoints.addEndpoint("1", " Total Hours ", endpointType.genericSensor);
-        total_hours.variableTypeId = 1181;
-
-  var state = endpoints.addEndpoint("2", "Line State", endpointType.genericSensor);
-        state.variableTypeId = 1183;
-
-  var productive_hours= endpoints.addEndpoint("3", " Productive hours ", endpointType.genericSensor);
-        productive_hours.variableTypeId = 1181;
-
-  var downtime = endpoints.addEndpoint("4", " Downtime ", endpointType.genericSensor);
-        downtime.variableTypeId = 1181;
-
-  var availability = endpoints.addEndpoint("5", " Availability ", endpointType.genericSensor);
-        availability.variableTypeId = 1182;
-
-  var produced_theorical = endpoints.addEndpoint("6", " Produced Theorical ", endpointType.genericSensor);
-        produced_theorical.variableTypeId = 1180;
-
-  var produced_real = endpoints.addEndpoint("7", "Produced real", endpointType.genericSensor);
-        produced_real.variableTypeId = 1180;
-
-  var performance = endpoints.addEndpoint("8", "Performance ", endpointType.genericSensor);
-        performance.variableTypeId = 1182;
-
-  var fault = endpoints.addEndpoint("9", "Faulty units", endpointType.genericSensor);
-        fault.variableTypeId = 1180;
-
-  var ok = endpoints.addEndpoint("10", " Production accepted", endpointType.genericSensor);
-        ok.variableTypeId = 1180;
-
-  var quality = endpoints.addEndpoint("11", "Quality ", endpointType.genericSensor);
-        quality.variableTypeId = 1182;
-
-  var oee = endpoints.addEndpoint("12", "OEE ", endpointType.genericSensor);
-        oee.variableTypeId = 1182;
+    var total_hours = endpoints.addEndpoint("1", " Total Hours ", endpointType.genericSensor);
+        total_hours.variableTypeId = 1028;
+    var state = endpoints.addEndpoint("2", "Line State", endpointType.genericSensor);
+        state.variableTypeId = 1040;
+    var productive_hours= endpoints.addEndpoint("3", " Productive hours ", endpointType.genericSensor);
+        productive_hours.variableTypeId = 1028;
+    var downtime = endpoints.addEndpoint("4", " Downtime ", endpointType.genericSensor);
+        downtime.variableTypeId = 1028;
+    var availability = endpoints.addEndpoint("5", " Availability ", endpointType.genericSensor);
+        availability.variableTypeId = 1041;
+    var produced_theorical = endpoints.addEndpoint("6", " Produced Theorical ", endpointType.genericSensor);
+        produced_theorical.variableTypeId = 1028;
+    var produced_real = endpoints.addEndpoint("7", "Produced real", endpointType.genericSensor);
+        produced_real.variableTypeId = 1028;
+    var performance = endpoints.addEndpoint("8", "Performance ", endpointType.genericSensor);
+        performance.variableTypeId = 1028;
+    var fault = endpoints.addEndpoint("9", "Faulty units", endpointType.genericSensor);
+        fault.variableTypeId = 1028;
+    var ok = endpoints.addEndpoint("10", " Production accepted", endpointType.genericSensor);
+        ok.variableTypeId = 1028;
+    var quality = endpoints.addEndpoint("11", "Quality ", endpointType.genericSensor);
+        quality.variableTypeId = 1028;
+    var oee = endpoints.addEndpoint("12", "OEE ", endpointType.genericSensor);
+        oee.variableTypeId = 1028;
+    var status = endpoints.addEndpoint("13", "Status", endpointType.genericSensor);
+        status.variableTypeId = 1043;
 
 }
 
